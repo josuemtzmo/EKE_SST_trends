@@ -1,9 +1,8 @@
-# Mesoscale kinetic energy response to changing oceans
+# Global changes in oceanic mesoscale currents over the satellite altimetry record
 
 A repository containing material related to the paper
 
-> Martínez-Moreno, J., et. al. (2020). Mesoscale kinetic energy response to changing oceans. 
-*XXXX*, **XXX**, XXX-XXX doi:[XXXX](XXXX).
+> Martínez-Moreno, J., Hogg, A. McC., England, M. H., Constantinou, N. C., Kiss, A. E., and Morrison, A. K. (2020). Global changes in oceanic mesoscale currents over the satellite altimetry record. *XXXX*, **XXX**, XXX-XXX doi:[XXXX](XXXX).
 
 that investigates the temporal evolution of oceanic surface eddy kinetic energy and sea surface temperature over the satellite record from a global, geographical and dynamical-region perspective.
 
@@ -23,7 +22,7 @@ Analysed datasets include the [AVISO+ SSH altimetry](https://www.aviso.altimetry
 Contributors:
 [Josué Martínez-Moreno](http://josuemtzmo.github.io/) (@josuemtzmo), 
 [Andy McC. Hogg](http://rses.anu.edu.au/people/academics/prof-andy-hogg) (@AndyHoggANU), 
-[Matthew H. England](https://www.ccrc.unsw.edu.au/ccrc-team/academic-research/matthew-england), 
+[Matthew H. England](http://web.science.unsw.edu.au/~matthew/), 
 [Navid C. Constantinou](http://www.navidconstantinou.com) (@navidcy),
 [Andrew E. Kiss](https://researchers.anu.edu.au/researchers/kiss-ae) (@aekiss),
 [Adele K. Morrison](http://rses.anu.edu.au/people/academics/dr-adele-morrison) (@adele157).
