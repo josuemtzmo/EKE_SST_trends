@@ -1,8 +1,8 @@
 # Global changes in oceanic mesoscale currents over the satellite altimetry record
 
-A repository containing material related to the paper
+A repository containing material related to the manuscript
 
-> Martínez-Moreno, J., Hogg, A. McC., England, M. H., Constantinou, N. C., Kiss, A. E., and Morrison, A. K. (2020). Global changes in oceanic mesoscale currents over the satellite altimetry record. *XXXX*, **XXX**, XXX-XXX doi:[XXXX](XXXX).
+> Martínez-Moreno, J., Hogg, A. McC., England, M. H., Constantinou, N. C., Kiss, A. E., and Morrison, A. K. Global changes in oceanic mesoscale currents over the satellite altimetry record. (submitted on Oct. 2020; preprint at doi:[10.21203/rs.3.rs-88932/v1](https://doi.org/10.21203/rs.3.rs-88932/v1))
 
 that investigates the temporal evolution of oceanic surface eddy kinetic energy and sea surface temperature over the satellite record from a global, geographical and dynamical-region perspective.
 
@@ -11,13 +11,11 @@ Analysed datasets include the [AVISO+ SSH altimetry](https://www.aviso.altimetry
 
 ### Contents
 
-`trends`: folder with jupyter notebooks that compute trends.
+`trends`: folder with jupyter notebooks that compute trends. [to be added]
 
-`figures`: folder with jupyter notebooks that produce the main figures of the manuscript.
+`figures`: folder with jupyter notebooks that produce the main figures of the manuscript. [to be added]
 
 `data`: folder in which the NetCDF (`.nc`) output files are expected to be found. Download NetCDF files from doi:[10.5281/zenodo.3993824](https://doi.org/10.5281/zenodo.3993824).
-
-`submissions`: folder with LaTeX manuscript submitted to XXX and to arXiv.
 
 Contributors:
 [Josué Martínez-Moreno](http://josuemtzmo.github.io/) (@josuemtzmo), 
