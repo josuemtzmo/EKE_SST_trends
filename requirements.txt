@@ -1,0 +1,6 @@
+numpy
+xarray
+dask
+cartopy
+cmocean
+jupyterlab
