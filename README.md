@@ -9,6 +9,26 @@ that investigates the temporal evolution of oceanic surface eddy kinetic energy 
 
 Analysed datasets include the [AVISO+ SSH altimetry](https://www.aviso.altimetry.fr/en/data/products/sea-surface-height-products/global/gridded-sea-level-heights-and-derived-variables.html) and [NOAA optimal interpolated sea surface temperature](https://www.ncdc.noaa.gov/oisst) (OISST). 
 
+### Python requirements:
+
+Make sure you have the module requirements (`numpy`, `xarray`,`dask`,`cartopy`,`cmocean`, & `jupyterlab`):
+
+```
+pip install -r requirements.txt 
+```
+
+```
+conda install -c conda-forge --file ./requirements.txt
+```
+
+Aditionally, install [xarrayMannKendall](https://github.com/josuemtzmo/xarrayMannKendall):
+
+```
+git clone https://github.com/josuemtzmo/xarrayMannKendall.git
+```
+
+and follow the installation instructions in [xarrayMannKendall GitHub Page](https://github.com/josuemtzmo/xarrayMannKendall).
+
 ### Contents
 
 `trends`: folder with jupyter notebooks that compute trends. [to be added]
