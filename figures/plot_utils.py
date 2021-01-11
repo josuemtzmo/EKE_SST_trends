@@ -1,4 +1,3 @@
-import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 import numpy as np
@@ -6,23 +5,6 @@ import numpy as np
 import cartopy.crs as ccrs
 import cartopy.feature as feature
 
-# Constant:
-earth_radius = 6371e3
-omega = 7.2921159e-5
-
-# Function to compute grid area:
-def area(lat,lon):
-    lat_r = np.radians(lat)
-    lon_r = np.radians(lon)
-    f=2*omega*np.sin(lat_r)
-    grad_lon=lon_r.copy()
-    grad_lon.data=np.gradient(lon_r)
-
-    dx=grad_lon*earth_radius*np.cos(lat_r)
-    dy=np.gradient(lat_r)*earth_radius
-
-    return dx*dy
-    
 
 def truncate_colormap(cmap, minval=0.0, maxval=1.0, n=100):
     new_cmap = colors.LinearSegmentedColormap.from_list(
