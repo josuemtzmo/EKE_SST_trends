@@ -1,6 +1,8 @@
 # Ignore datasets
 *.nc
 ./data*
+./*.data
+*.data
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -134,3 +136,5 @@ dmypy.json
 
 # Mac OS X
 .DS_store
+
+dask-*

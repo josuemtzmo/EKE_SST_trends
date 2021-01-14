@@ -4,3 +4,4 @@ dask
 cartopy
 cmocean
 jupyterlab
+astropy
