@@ -1,4 +1,10 @@
-# Ignore datasets
+# Ignore tex
+*.aux
+*.out
+*.synctex.gz
+*.log
+
+#Ignore datasets
 *.nc
 ./data*
 ./*.data
