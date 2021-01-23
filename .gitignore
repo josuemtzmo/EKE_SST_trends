@@ -3,6 +3,8 @@
 *.out
 *.synctex.gz
 *.log
+*.bbl
+*.blg
 
 #Ignore datasets
 *.nc
