@@ -1,4 +1,7 @@
 # Global changes in oceanic mesoscale currents over the satellite altimetry record
+| Zenodo |
+|:------:|
+|[![DOI](https://zenodo.org/badge/289187055.svg)](https://zenodo.org/badge/latestdoi/289187055)|
 
 A repository containing material related to the manuscript
 
