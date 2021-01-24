@@ -5,7 +5,7 @@
 
 A repository containing material related to the manuscript
 
-> Martínez-Moreno, J., Hogg, A. McC., England, M. H., Constantinou, N. C., Kiss, A. E., and Morrison, A. K. Global changes in oceanic mesoscale currents over the satellite altimetry record. (submitted on Oct. 2020; preprint at doi:[10.21203/rs.3.rs-88932/v1](https://doi.org/10.21203/rs.3.rs-88932/v1))
+> Martínez-Moreno, J., Hogg, A. McC., England, M. H., Constantinou, N. C., Kiss, A. E., and Morrison, A. K. Global changes in oceanic mesoscale currents over the satellite altimetry record. (submitted on Oct. 2020; preprint at DOI:[10.21203/rs.3.rs-88932/v1](https://doi.org/10.21203/rs.3.rs-88932/v1))
 
 that investigates the temporal evolution of oceanic surface eddy kinetic energy and sea surface temperature over the satellite record from a global, geographical and dynamical-region perspective.
 
