@@ -34,9 +34,11 @@ and follow the installation instructions in [xarrayMannKendall GitHub Page](http
 
 ### Contents:
 
+[`manuscript`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/manuscript): folder containing the LaTeX source files and figures for the manuscript
+
 [`datasets`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/datasets): folder in which the NetCDF (.nc) output files are expected to be found. Download NetCDF files from <a href="https://doi.org/10.5281/zenodo.3993824"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993824.svg" alt="zenodo doi"></a>
 
-[`figures`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/figures): folder with jupyter notebooks that produce the main figures of the manuscript. [to be added]
+[`figures`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/figures): folder with jupyter notebooks that produce the main figures of the manuscript.
 
 [`pre-processing`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/pre-processing): folder with scripts and instructions that reproduce `.nc` files in `datasets` from the raw AVISO+ dataset
 
