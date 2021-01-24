@@ -23,7 +23,7 @@ pip install -r requirements.txt
 conda install -c conda-forge --file ./requirements.txt
 ```
 
-Aditionally, install [xarrayMannKendall](https://github.com/josuemtzmo/xarrayMannKendall):
+Additionally, install [xarrayMannKendall](https://github.com/josuemtzmo/xarrayMannKendall):
 
 ```
 git clone https://github.com/josuemtzmo/xarrayMannKendall.git
