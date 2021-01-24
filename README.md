@@ -12,10 +12,6 @@ that investigates the temporal evolution of oceanic surface eddy kinetic energy 
 
 Analysed datasets include the [AVISO+ SSH altimetry](https://www.aviso.altimetry.fr/en/data/products/sea-surface-height-products/global/gridded-sea-level-heights-and-derived-variables.html) and [NOAA optimal interpolated sea surface temperature](https://www.ncdc.noaa.gov/oisst) (OISST). 
 
-## Abstract
-
-Oceanic mesoscale eddies play a profound role in mixing tracers such as heat, carbon, and nutrients, thereby regulating regional and global climate. Yet, it remains unclear how the eddy field has varied over the past few decades. Furthermore, climate model predictions generally do not resolve mesoscale eddies, which could limit their accuracy in simulating future climate change. Here we show a global statistically significant increase of ocean eddy activity using two independent observational datasets of surface mesoscale eddy variability, one estimates surface currents and the other is derived from sea surface temperature. Maps of mesoscale variability trends show heterogeneous patterns, with eddy-rich regions showing a significant increase of 2% - 5% per decade, while the tropical oceans show a decrease in mesoscale variability. This readjustment of the surface mesoscale ocean circulation has important implications for the exchange of heat and carbon between the ocean and atmosphere.
-
 ### Python requirements:
 
 Make sure you have the module requirements (`numpy`, `xarray`,`dask`,`cartopy`,`cmocean`, & `jupyterlab`):
