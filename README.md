@@ -9,7 +9,6 @@ A repository containing material related to the manuscript
 
 that investigates the temporal evolution of oceanic surface eddy kinetic energy and sea surface temperature over the satellite record from a global, geographical and dynamical-region perspective.
 
-
 Analysed datasets include the [AVISO+ SSH altimetry](https://www.aviso.altimetry.fr/en/data/products/sea-surface-height-products/global/gridded-sea-level-heights-and-derived-variables.html) and [NOAA optimal interpolated sea surface temperature](https://www.ncdc.noaa.gov/oisst) (OISST). 
 
 ### Python requirements:
@@ -55,17 +54,25 @@ Execute the notebooks in the following order:
 4. `./pre-processing/EKE_scale_decomposition.ipynb`; This notebook decomposes the EKE field (lon,lat,t) into large-scale EKE and mesoscale EKE (features smaller than 3°x 3° degrees).
 5. `./pre-processing/SST_gradient_scale_decomposition.ipynb`; This notebook decomposes the SST gradient field (lon,lat,t) into large-scale SST gradients and mesoscale SST gradients (features smaller than 3°x 3° degrees).
 6. Subsequently, the trends can be reproduced by executing the notebooks in the folder `trends`. 
+7. Download mask into the `datasets` folder:
+    ```
+    cd datasets 
+    wget https://zenodo.org/record/3993824/files/ocean_basins_and_dynamical_masks.nc?download=1
+    ```
 
-Optionally, the pre-processed datasets can be downloaded from  <a href="https://doi.org/10.5281/zenodo.3993824"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993824.svg" alt="zenodo doi"></a>. To facilitate the download of all `*.nc` files, install <a href="https://doi.org/10.5281/zenodo.3993824">Zenodo_get</a>:
+Optionally, the pre-processed datasets can be downloaded from  <a href="https://doi.org/10.5281/zenodo.3993824"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993824.svg" alt="zenodo doi"></a>. To facilitate the download of all `*.nc` files, install <a href="https://doi.org/10.5281/zenodo.3993824">zenodo_get</a>:
 ```
 pip install zenodo-get
 ```
 all the datasets can be downloaded by running:
 ```
+cd datasets
 zenodo_get 10.5281/zenodo.3993824
 ```
 
 > **WARNING**: It is required ~16 GB of disk space to download the full pre-processed dataset.
+
+Now you can reproduce all the analysis and figures of the manuscript (See `figures` folder).
 
 ### Authors:
 - [Josué Martínez-Moreno](http://josuemtzmo.github.io/) (@josuemtzmo) <[josue.martinezmoreno@anu.edu.au](mailto:josue.martinezmoreno@anu.edu.au)>, 
@@ -85,7 +92,8 @@ This study was supported by the ARC Centre of Excellence for Climate Extremes, A
 
 This repository can be cited as:
 
-Josué Martínez Moreno, Andrew McC. Hogg, Matthew H. England, Navid C. Constantinou, Andrew E. Kiss, & Adele K. Morrison. (2021, January 23). josuemtzmo/EKE_SST_trends: EKE_SST_trends: Jupyter notebooks (Python) used to compute trends of Eddy kinetic energy and sea surface temperature (Version v0.1.0-alpha). Zenodo. http://doi.org/10.5281/zenodo.4458784
+>Josué Martínez Moreno, Andrew McC. Hogg, Matthew H. England, Navid C. Constantinou, Andrew E. Kiss, & Adele K. Morrison. (2021, January 23). josuemtzmo/EKE_SST_trends: EKE_SST_trends: Jupyter notebooks (Python) used to compute trends of Eddy kinetic energy and sea surface temperature (Version v0.1.0-alpha). Zenodo. http://doi.org/10.5281/zenodo.4458784
 
 ### Software reference:
-David Völgyes, & Rick Lupton. (2020, February 20). Zenodo_get: a downloader for Zenodo records (Version v1.3.0). Zenodo. http://doi.org/10.5281/zenodo.3676567
+- David Völgyes, & Rick Lupton. (2020, February 20). Zenodo_get: a downloader for Zenodo records (Version v1.3.0). Zenodo. http://doi.org/10.5281/zenodo.3676567
+- Josué Martínez Moreno, & Navid C. Constantinou. (2021, January 23). josuemtzmo/xarrayMannKendall: Mann Kendall significance test implemented in xarray. (Version v.1.0.1). Zenodo. http://doi.org/10.5281/zenodo.4458780
