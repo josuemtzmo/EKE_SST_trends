@@ -36,7 +36,7 @@ and follow the installation instructions in [xarrayMannKendall GitHub Page](http
 
 [`manuscript`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/manuscript): folder containing the LaTeX source files and figures for the manuscript
 
-[`datasets`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/datasets): folder in which the NetCDF (.nc) output files are expected to be found. Download NetCDF files from <a href="https://doi.org/10.5281/zenodo.3993824"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993824.svg" alt="zenodo doi"></a>
+[`datasets`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/datasets): folder in which the NetCDF (.nc) output files are expected to be found. Download NetCDF files from <a href="https://doi.org/10.5281/zenodo.3993823"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993823.svg" alt="zenodo doi"></a>
 
 [`figures`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/figures): folder with jupyter notebooks that produce the main figures of the manuscript.
 
@@ -62,7 +62,7 @@ Execute the notebooks in the following order:
     wget https://zenodo.org/record/3993824/files/ocean_basins_and_dynamical_masks.nc?download=1
     ```
 
-Optionally, if you do not have access to AVISO+ or OISST NOAA datasets, you can download the pre-processed datasets from  <a href="https://doi.org/10.5281/zenodo.3993824"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993824.svg" alt="zenodo doi"></a>. To facilitate the download of all `*.nc` files, fist install <a href="https://doi.org/10.5281/zenodo.3993824">zenodo_get</a>:
+Optionally, if you do not have access to AVISO+ or OISST NOAA datasets, you can download the pre-processed datasets from  <a href="https://doi.org/10.5281/zenodo.3993823"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993823.svg" alt="zenodo doi"></a>. To facilitate the download of all `*.nc` files, fist install <a href="https://doi.org/10.5281/zenodo.3993824">zenodo_get</a>:
 
 ```
 pip install zenodo-get
@@ -97,8 +97,8 @@ This study was supported by the ARC Centre of Excellence for Climate Extremes, A
 
 This repository can be cited as:
 
->Josué Martínez Moreno, Andrew McC. Hogg, Matthew H. England, Navid C. Constantinou, Andrew E. Kiss, & Adele K. Morrison. (2021, January 23). josuemtzmo/EKE_SST_trends: EKE_SST_trends: Jupyter notebooks (Python) used to compute trends of Eddy kinetic energy and sea surface temperature (Version v0.1.0-alpha). Zenodo. http://doi.org/10.5281/zenodo.4458784
+>Josué Martínez Moreno, Andrew McC. Hogg, Matthew H. England, Navid C. Constantinou, Andrew E. Kiss, & Adele K. Morrison. (2021, January 23). josuemtzmo/EKE_SST_trends: EKE_SST_trends: Jupyter notebooks (Python) used to compute trends of Eddy kinetic energy and sea surface temperature (Version v0.1.0-alpha). Zenodo. http://doi.org/10.5281/zenodo.4458783
 
 ### Software reference:
 - David Völgyes, & Rick Lupton. (2020, February 20). Zenodo_get: a downloader for Zenodo records (Version v1.3.0). Zenodo. http://doi.org/10.5281/zenodo.3676567
-- Josué Martínez Moreno, & Navid C. Constantinou. (2021, January 23). josuemtzmo/xarrayMannKendall: Mann Kendall significance test implemented in xarray. (Version v.1.0.1). Zenodo. http://doi.org/10.5281/zenodo.4458780
+- Josué Martínez Moreno, & Navid C. Constantinou. (2021, January 23). josuemtzmo/xarrayMannKendall: Mann Kendall significance test implemented in xarray. (Version v.1.0.1). Zenodo. http://doi.org/10.5281/zenodo.4458776

@@ -1,14 +1,12 @@
 # Datasets
 
-<a href="https://doi.org/10.5281/zenodo.3993824"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993824.svg" alt="zenodo doi"></a>
-
-The pre-processed datasets can be downloaded from  <a href="https://doi.org/10.5281/zenodo.3993824"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993824.svg" alt="zenodo doi"></a>. To facilitate the download of all `*.nc` files, install <a href="https://doi.org/10.5281/zenodo.3993824">Zenodo_get</a>:
+The pre-processed datasets can be downloaded from  <a href="https://doi.org/10.5281/zenodo.3993823"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993823.svg" alt="zenodo doi"></a>. To facilitate the download of all `*.nc` files, install <a href="https://doi.org/10.5281/zenodo.3993824">Zenodo_get</a>:
 ```
 pip install zenodo-get
 ```
 all the datasets can be downloaded by running:
 ```
-zenodo_get 10.5281/zenodo.3993824
+zenodo_get 10.5281/zenodo.3993823
 ```
 
 > **WARNING**: It is required ~16 GB of disk space to download the full pre-processed dataset.
