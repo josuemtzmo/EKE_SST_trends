@@ -1,11 +1,12 @@
 # Global changes in oceanic mesoscale currents over the satellite altimetry record
+
 | Zenodo |
 |:------:|
 |[![DOI](https://zenodo.org/badge/289187055.svg)](https://zenodo.org/badge/latestdoi/289187055)|
 
 A repository containing material related to the manuscript
 
-> Martínez-Moreno, J., Hogg, A. McC., England, M. H., Constantinou, N. C., Kiss, A. E., and Morrison, A. K. Global changes in oceanic mesoscale currents over the satellite altimetry record. (submitted on Oct. 2020; preprint at DOI:[10.21203/rs.3.rs-88932/v1](https://doi.org/10.21203/rs.3.rs-88932/v1))
+> Martínez-Moreno, J., Hogg, A. McC., England, M. H., Constantinou, N. C., Kiss, A. E., and Morrison, A. K. Global changes in oceanic mesoscale currents over the satellite altimetry record. (submitted on Oct. 2020; preprint available at doi:[10.21203/rs.3.rs-88932/v1](https://doi.org/10.21203/rs.3.rs-88932/v1))
 
 that investigates the temporal evolution of oceanic surface eddy kinetic energy and sea surface temperature over the satellite record from a global, geographical and dynamical-region perspective.
 
@@ -13,7 +14,7 @@ Analysed datasets include the [AVISO+ SSH altimetry](https://www.aviso.altimetry
 
 ### Python requirements:
 
-Make sure you have the module requirements (`numpy`, `xarray`,`dask`,`cartopy`,`cmocean`, & `jupyterlab`):
+Make sure you have the required dependencies installed (`numpy`, `xarray`,`dask`,`cartopy`,`cmocean`, & `jupyterlab`):
 
 ```
 pip install -r requirements.txt 
@@ -45,14 +46,15 @@ and follow the installation instructions in [xarrayMannKendall GitHub Page](http
 
 ### Datasets:
 
-To generate all the pre-processed datasets of this repository, it is required to have full access to the AVISO+ dataset and OISST NOAA (1993-2020), the generated pre-processed datasets will reproduce the analysis and results presented in the Martínez-Moreno, J, _et al._ 2020. All the required notebooks to reproduce these datasets are located in the `pre-processing` and `trends` folders. 
+To generate all the pre-processed [`datasets`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/datasets) of this repository, you need access to the AVISO+ altimetry and OISST NOAA datasets for period Jan. 1993 - Dec 2019. The generated pre-processed datasets will reproduce the analysis and results presented in the manuscript. All the required notebooks to reproduce the pre-processed datasets from the raw AVISO+ and OISST NOAA datasets are in the [`pre-processing`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/pre-processing) and [`trends`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/trends) folders. The notebooks within `pre-processing` folder use the raw satellite output to produce some of the `.nc` files inside `datasets`; the notebooks within `trends` use the `.nc` files in `datasets` that were produced by `pre-processing` to output the `*_trends.nc` files inside `datasets`.
+
 Execute the notebooks in the following order:
 
-1. `./pre-processing/AVISO+_to_EKE_timeseries.ipynb`; This notebook generates the EKE field (lon,lat,t) from the AVISO+ geostrophic velocities anomalies.
-2. `./pre-processing/OISST_to_SST_grad_timeseries.ipynb`; This notebook generates the SST gradient field (lon,lat,t) from the OISST NOAA SST field.
-3. `./pre-processing/KE_anomaly_timeseries.ipynb`; This notebook generates the KE field anomaly (lon,lat,t) from the AVISO+ geostrophic velocities.
-4. `./pre-processing/EKE_scale_decomposition.ipynb`; This notebook decomposes the EKE field (lon,lat,t) into large-scale EKE and mesoscale EKE (features smaller than 3°x 3° degrees).
-5. `./pre-processing/SST_gradient_scale_decomposition.ipynb`; This notebook decomposes the SST gradient field (lon,lat,t) into large-scale SST gradients and mesoscale SST gradients (features smaller than 3°x 3° degrees).
+1. `./pre-processing/AVISO+_to_EKE_timeseries.ipynb`: generate the EKE field `(lon, lat, time)` from the AVISO+ geostrophic velocity anomalies.
+2. `./pre-processing/OISST_to_SST_grad_timeseries.ipynb`; generate the SST gradient field `(lon, lat, time)` from the OISST NOAA SST record.
+3. `./pre-processing/KE_anomaly_timeseries.ipynb`; generate the KE field anomaly `(lon, lat, time)` from the AVISO+ geostrophic velocities.
+4. `./pre-processing/EKE_scale_decomposition.ipynb`; use a 3°x 3° kernel to decompose the EKE field `(lon, lat, time)` into large-scale EKE and mesoscale EKE.
+5. `./pre-processing/SST_gradient_scale_decomposition.ipynb`; use a 3°x 3° kernel to decompose the SST gradient field `(lon, lat, time)` into large-scale SST gradients and mesoscale SST gradients (features smaller than 3°x 3° degrees).
 6. Subsequently, the trends can be reproduced by executing the notebooks in the folder `trends`. 
 7. Download mask into the `datasets` folder:
     ```
@@ -60,19 +62,22 @@ Execute the notebooks in the following order:
     wget https://zenodo.org/record/3993824/files/ocean_basins_and_dynamical_masks.nc?download=1
     ```
 
-Optionally, the pre-processed datasets can be downloaded from  <a href="https://doi.org/10.5281/zenodo.3993824"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993824.svg" alt="zenodo doi"></a>. To facilitate the download of all `*.nc` files, install <a href="https://doi.org/10.5281/zenodo.3993824">zenodo_get</a>:
+Optionally, if you do not have access to AVISO+ or OISST NOAA datasets, you can download the pre-processed datasets from  <a href="https://doi.org/10.5281/zenodo.3993824"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3993824.svg" alt="zenodo doi"></a>. To facilitate the download of all `*.nc` files, fist install <a href="https://doi.org/10.5281/zenodo.3993824">zenodo_get</a>:
+
 ```
 pip install zenodo-get
 ```
-all the datasets can be downloaded by running:
+
+Then all the datasets can be downloaded via:
+
 ```
 cd datasets
 zenodo_get 10.5281/zenodo.3993824
 ```
 
-> **WARNING**: It is required ~16 GB of disk space to download the full pre-processed dataset.
+> **WARNING**: Disk space of ~17 GB is required to download all contents of `datasets` folder.
 
-Now you can reproduce all the analysis and figures of the manuscript (See `figures` folder).
+Now you can reproduce all the analysis and figures of the manuscript; see [`figures`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/figures) folder.
 
 ### Authors:
 - [Josué Martínez-Moreno](http://josuemtzmo.github.io/) (@josuemtzmo) <[josue.martinezmoreno@anu.edu.au](mailto:josue.martinezmoreno@anu.edu.au)>, 
