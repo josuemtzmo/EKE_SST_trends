@@ -2,7 +2,7 @@
 
 | Zenodo |
 |:------:|
-|[![DOI](https://zenodo.org/badge/289187055.svg)](https://zenodo.org/badge/latestdoi/289187055)|
+|[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4458783.svg)](https://doi.org/10.5281/zenodo.4458783)|
 
 A repository containing material related to the manuscript
 
