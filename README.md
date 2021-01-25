@@ -51,12 +51,19 @@ To generate all the pre-processed [`datasets`](https://github.com/josuemtzmo/EKE
 Execute the notebooks in the following order:
 
 1. `./pre-processing/AVISO+_to_EKE_timeseries.ipynb`: generate the EKE field `(lon, lat, time)` from the AVISO+ geostrophic velocity anomalies.
+
 2. `./pre-processing/OISST_to_SST_grad_timeseries.ipynb`; generate the SST gradient field `(lon, lat, time)` from the OISST NOAA SST record.
+
 3. `./pre-processing/KE_anomaly_timeseries.ipynb`; generate the KE field anomaly `(lon, lat, time)` from the AVISO+ geostrophic velocities.
+
 4. `./pre-processing/EKE_scale_decomposition.ipynb`; use a 3°x 3° kernel to decompose the EKE field `(lon, lat, time)` into large-scale EKE and mesoscale EKE.
+
 5. `./pre-processing/SST_gradient_scale_decomposition.ipynb`; use a 3°x 3° kernel to decompose the SST gradient field `(lon, lat, time)` into large-scale SST gradients and mesoscale SST gradients (features smaller than 3°x 3° degrees).
+
 6. Subsequently, the trends can be reproduced by executing the notebooks in the folder `trends`. 
+
 7. Download mask into the `datasets` folder:
+
     ```
     cd datasets 
     wget https://zenodo.org/record/3993824/files/ocean_basins_and_dynamical_masks.nc?download=1
