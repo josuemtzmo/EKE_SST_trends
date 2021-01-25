@@ -46,7 +46,7 @@ and follow the installation instructions in [xarrayMannKendall GitHub Page](http
 
 ### Datasets:
 
-To generate all the pre-processed [`datasets`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/datasets) of this repository, you need access to the AVISO+ altimetry and OISST NOAA datasets for period Jan. 1993 - Dec 2019. The generated pre-processed datasets will reproduce the analysis and results presented in the manuscript. All the required notebooks to reproduce the pre-processed datasets from the raw AVISO+ and OISST NOAA datasets are in the [`pre-processing`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/pre-processing) and [`trends`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/trends) folders. The notebooks within `pre-processing` folder use the raw satellite output to produce some of the `.nc` files inside `datasets`; the notebooks within `trends` use the `.nc` files in `datasets` that were produced by `pre-processing` to output the `*_trends.nc` files inside `datasets`.
+To generate all the pre-processed [`datasets`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/datasets) of this repository, you need access to the AVISO+ altimetry and OISST NOAA datasets for period Jan. 1993 - Mar. 2020. The generated pre-processed datasets will reproduce the analysis and results presented in the manuscript. All the required notebooks to reproduce the pre-processed datasets from the raw AVISO+ and OISST NOAA datasets are in the [`pre-processing`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/pre-processing) and [`trends`](https://github.com/josuemtzmo/EKE_SST_trends/tree/master/trends) folders. The notebooks within `pre-processing` folder use the raw satellite output to produce some of the `.nc` files inside `datasets`; the notebooks within `trends` use the `.nc` files in `datasets` that were produced by `pre-processing` to output the `*_trends.nc` files inside `datasets`.
 
 Execute the notebooks in the following order:
 
@@ -95,17 +95,19 @@ Now you can reproduce all the analysis and figures of the manuscript; see [`figu
 - [Adele K. Morrison](http://rses.anu.edu.au/people/academics/dr-adele-morrison) (@adele157).
 
 ### Funding:
-This study was supported by the ARC Centre of Excellence for Climate Extremes, Australia. (CLEX), in addition to the authors been suported by:
-- J.M.‐M. was supported by the Consejo Nacional de Ciencia y Tecnología (CONACYT), Mexico funding. 
-- M.H.E. was supported by the Centre for Southern Hemisphere Oceans Research (CSHOR), a joint research centre between  Qingdao National Laboratory for Marine Science and Technology (QNLM), Commonwealth Scientific and Industrial Research Organisation (CSIRO), University of New South Wales (UNSW), and the University of Tasmania (UTAS).
-- A.K.M. was supported by the Australian Research Council DECRA Fellowship
+This study was supported by the ARC Centre of Excellence for Climate Extremes (CLEx) funded by the Australian Research Counci. Additionally:
+- J.M.‐M. was supported by the Consejo Nacional de Ciencia y Tecnología (CONACYT), Mexico funding,
+- M.H.E. was supported by the Centre for Southern Hemisphere Oceans Research (CSHOR), a joint research centre between  Qingdao National Laboratory for Marine Science and Technology (QNLM), Commonwealth Scientific and Industrial Research Organisation (CSIRO), University of New South Wales (UNSW), and the University of Tasmania (UTAS), and
+- A.K.M. was supported by the Australian Research Council DECRA Fellowship.
 
-### Cite this code:
+### Citation:
 
-This repository can be cited as:
+Cite this repository as:
 
->Josué Martínez Moreno, Andrew McC. Hogg, Matthew H. England, Navid C. Constantinou, Andrew E. Kiss, & Adele K. Morrison. (2021, January 23). josuemtzmo/EKE_SST_trends: EKE_SST_trends: Jupyter notebooks (Python) used to compute trends of Eddy kinetic energy and sea surface temperature (Version v0.1.0-alpha). Zenodo. http://doi.org/10.5281/zenodo.4458783
+> Josué Martínez Moreno, Andrew McC. Hogg, Matthew H. England, Navid C. Constantinou, Andrew E. Kiss, & Adele K. Morrison. (2021, January 23). josuemtzmo/EKE_SST_trends: EKE_SST_trends: Jupyter notebooks (Python) used to compute trends of Eddy kinetic energy and sea surface temperature (Version v0.1.0-alpha). Zenodo. http://doi.org/10.5281/zenodo.4458783
 
 ### Software reference:
+
 - David Völgyes, & Rick Lupton. (2020, February 20). Zenodo_get: a downloader for Zenodo records (Version v1.3.0). Zenodo. http://doi.org/10.5281/zenodo.3676567
+
 - Josué Martínez Moreno, & Navid C. Constantinou. (2021, January 23). josuemtzmo/xarrayMannKendall: Mann Kendall significance test implemented in xarray. (Version v.1.0.1). Zenodo. http://doi.org/10.5281/zenodo.4458776
