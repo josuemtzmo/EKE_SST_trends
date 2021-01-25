@@ -90,7 +90,7 @@ Now you can reproduce all the analysis and figures of the manuscript; see [`figu
 ### Funding:
 This study was supported by the ARC Centre of Excellence for Climate Extremes, Australia. (CLEX), in addition to the authors been suported by:
 - J.M.‐M. was supported by the Consejo Nacional de Ciencia y Tecnología (CONACYT), Mexico funding. 
-- M.H.E. was supported by the Centre for Southern Hemisphere Oceans Research (CSHOR), a joint research centre between QNLM, CSIRO, UNSW and UTAS.
+- M.H.E. was supported by the Centre for Southern Hemisphere Oceans Research (CSHOR), a joint research centre between  Qingdao National Laboratory for Marine Science and Technology (QNLM), Commonwealth Scientific and Industrial Research Organisation (CSIRO), University of New South Wales (UNSW), and the University of Tasmania (UTAS).
 - A.K.M. was supported by the Australian Research Council DECRA Fellowship
 
 ### Cite this code:
