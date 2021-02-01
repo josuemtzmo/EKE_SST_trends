@@ -95,10 +95,10 @@ Now you can reproduce all the analysis and figures of the manuscript; see [`figu
 - [Adele K. Morrison](http://rses.anu.edu.au/people/academics/dr-adele-morrison) (@adele157).
 
 ### Funding:
-This study was supported by the ARC Centre of Excellence for Climate Extremes (CLEx) funded by the Australian Research Counci. Additionally:
+This study was supported by the ARC Centre of Excellence for Climate Extremes (CLEx) funded by the Australian Research Council, grant CE170100023. In addition:
 - J.M.‐M. was supported by the Consejo Nacional de Ciencia y Tecnología (CONACYT), Mexico funding,
 - M.H.E. was supported by the Centre for Southern Hemisphere Oceans Research (CSHOR), a joint research centre between  Qingdao National Laboratory for Marine Science and Technology (QNLM), Commonwealth Scientific and Industrial Research Organisation (CSIRO), University of New South Wales (UNSW), and the University of Tasmania (UTAS), and
-- A.K.M. was supported by the Australian Research Council DECRA Fellowship.
+- A.K.M. was supported by the Australian Research Council DECRA Fellowship, grant DE170100184.
 
 ### Citation:
 
