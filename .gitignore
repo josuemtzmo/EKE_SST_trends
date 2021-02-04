@@ -5,6 +5,8 @@
 *.log
 *.bbl
 *.blg
+*.pdf
+*.tex
 
 #Ignore datasets
 *.nc
